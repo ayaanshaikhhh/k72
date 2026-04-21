@@ -1,6 +1,6 @@
 import React from "react";
 
-const video = () => {
+const Video = () => {
   return (
     <video
       className="h-full w-full object-cover pointer-events-none"
@@ -12,4 +12,4 @@ const video = () => {
   );
 };
 
-export default video;
+export default Video;
