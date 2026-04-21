@@ -1,0 +1,25 @@
+import React, { useRef } from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Agence from "./pages/Agence";
+import Projects from "./pages/Projects";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import NavBar from "./Components/navigation/NavBar";
+import FullScreenNav from "./Components/navigation/FullScreenNav";
+
+const App = () => {
+  return (
+    <div className="overflow-x-hidden">
+      <NavBar />
+      <FullScreenNav />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/agence" element={<Agence />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
